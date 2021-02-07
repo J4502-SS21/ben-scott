@@ -86,6 +86,8 @@ img {
   max-width: 400px;
 }
 
+/*I tried to see if I could make the background color box fitted to the body of text, but changing margins would condense the text as well, which didn't look great to me*/
+
 section {
   background: #0086b3;
   width:100%
