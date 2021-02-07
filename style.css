@@ -1,0 +1,100 @@
+body{
+  margin:0;
+  width: 100%;
+  text-align: center;
+  background-color: #ccf5ff;
+  margin-bottom: 100px;
+  /*The right margin of the entire page was empty, but extended beyond the normal width, giving the page a horizontal scroll bar. I think this overflow thing I googled did the trick to fix that. Turn off this line to see what I mean.*/
+  overflow-x: hidden;
+}
+
+h1{
+font-size: 36px;
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+}
+
+h2{
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+}
+
+nav{
+  background:#006080;
+  width: 100%;
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 3px solid black;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+  font-size: 30px;
+  display: block;
+  font-family: 'Anton', sans-serif;
+}
+
+/*I wanted the NAV links to be Anton, but it would't work if I did font-family in nav. Worked when I put the tag in ul*/
+
+li {
+  float:left;
+  width: 33%;
+}
+
+p{
+  margin: 7px auto;
+  font-size: 25px;
+  width: 50%;
+  font-family: 'EB Garamond', serif;
+  color: black;
+
+/*Really fun to play around with classes here. I wanted the nav links to be white, and the email link to be black.*/
+
+}
+a.list {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+a.email {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:black;
+}
+
+a:visited {
+
+}
+
+nav a:hover, p a:hover {
+  background-color: white;
+  color: black;
+}
+
+img {
+  border: 0;
+  margin: 35px;
+  width: 75%;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+section {
+  background: #0086b3;
+  width:100%
+  color: black;
+  padding: 20px;
+  box-shadow: 1px 1px 15px black;
+}
+
+@media (max-width: 600px) {
+
+  li {
+    width: 100%;
+    float: left;
+  }
