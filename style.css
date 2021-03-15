@@ -21,33 +21,33 @@ font-weight: 700;
 
 nav{
   background:#006080;
-  width: 100%;
   padding: 20px;
-  display: inline-block;
   margin-bottom: 20px;
   border-bottom: 3px solid black;
 }
 
 ul{
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: 0px;
   font-size: 30px;
-  display: block;
   font-family: 'Anton', sans-serif;
-  font-style:italic;
+  font-style: italic;
 }
 
 /*I wanted the NAV links to be Anton, but it would't work if I did font-family in nav. Worked when I put the tag in ul*/
 
 li {
-  float:left;
-  width: 33%;
+  color:black;
 }
 
 p{
-  margin: 7px auto;
   font-size: 25px;
-  width: 50%;
+  margin: 1rem auto;
+  max-width: 700px;
   font-family: 'EB Garamond', serif;
   color: black;
 
@@ -90,15 +90,20 @@ img {
 
 section {
   background: #0086b3;
-  width:100%
   color: black;
   padding: 20px;
   box-shadow: 1px 1px 15px black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   li {
     width: 100%;
-    float: left;
   }
+}
