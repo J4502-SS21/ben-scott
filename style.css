@@ -110,7 +110,7 @@ a.button{
 }
 
 a:visited, a.button:visited  {
-
+color: black;
 }
 
 nav a:hover, p a:hover {
