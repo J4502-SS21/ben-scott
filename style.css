@@ -18,14 +18,14 @@ margin-top: 0px;
 
 h2{
 font-family: 'Lato', sans-serif;
-font-size: 30px;
+font-size: 45px;
 font-weight: bold;
 text-align: center;
 }
 
 h3{
   font-family: 'Lato', sans-serif;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -69,7 +69,6 @@ p{
   font-family: 'EB Garamond', serif;
   color: black;
 
-/*Really fun to play around with classes here. I wanted the nav links to be white, and the email link to be black.*/
 
 }
 a.list {
@@ -79,6 +78,15 @@ a.list {
   color: black;
 }
 
+a.list1 {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  border-top: 0px;
+}
+
+
 a.email {
   text-decoration: none;
   font-weight: bold;
@@ -87,21 +95,51 @@ a.email {
   text-align: left;
 }
 
-a:visited {
+a.button{
+  font-size: 20px;
+  color: black;
+  border-radius: 50px;
+  background-color: #e3e3e3;
+  margin: 1rem auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  padding: 1rem;
+  border: 0.5px solid black;
+  text-decoration: none;
+}
+
+a:visited, a.button:visited  {
 
 }
 
 nav a:hover, p a:hover {
   background-color: #e3e3e3;
   color: black;
+  cursor: pointer;
+}
+
+li a:hover{
+  background-color: #e3e3e3;
+  color: black;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background-color: white;
+  color: black;
 }
 
 img {
   border: 0;
-  margin: 35px;
+  margin: 0px;
   width: 75%;
   min-width: 200px;
   max-width: 400px;
+}
+
+img.headshot{
+  margin: 35px;
 }
 
 /*I tried to see if I could make the background color box fitted to the body of text, but changing margins would condense the text as well, which didn't look great to me*/
@@ -126,6 +164,14 @@ section.clips{
   max-width: 700px;
   text-align: left;
   margin: 0px auto;
+}
+
+section.img_clips{
+  text-align: center;
+}
+
+#scroller{
+  overflow: hidden;
 }
 
 #menu_trigger {
